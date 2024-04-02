@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      color: hsl(0, 0%, 100%);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(184, 100%, 49%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <div class="container" id="container">
+      <div class="left">
+        <h1>
+          Stay updated!
+        </h1>
+
+        <p>
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <form>
+          <label for="email">Email address</label>
+          <input class="email-input" id="emailInput" type="email" placeholder="email@mail.com" required>
+          <button class="newsletter-btn button" id="submitEmail" type="submit">Subscribe to our monthly newsletter</button>
+        </form>
+      </div>
+
+      <div class="right">
+        <img class="desktop-image" src="assets/images/illustration-sign-up-desktop.svg" alt="">
+        <img class="mobile-image" src="assets/images/illustration-sign-up-mobile.svg" alt="">
+      </div>
+    </div>
+
+    <dialog class="newsletter-modal" id="newsletterModal">  
+      <div id="modalMessage"></div> <!-- Add a new element to display messages -->
+      <button class="modal-close-btn button" id="closeModal" type="submit">Dismiss message</button>
+    </dialog>
+
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Peter Samuel</a>.
+  </div>
+</body>
+
+</html>
